@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WalletActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_web3j_addr"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="https://rinkeby.infura.io/"
+                android:hint="设置测试私有链地址"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_init_web3j"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="初始化Web3j"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_all_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="所有钱包"/>
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="钱包设置页面"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="asdfasfd" />
+
+            <Button
+                android:id="@+id/btn_copy_address"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="复制钱包地址" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_eth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_item_default"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="ETH余额：" />
+
+            <TextView
+                android:id="@+id/tv_balance_eth"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="--" />
+
+            <Button
+                android:id="@+id/btn_refresh_balance_eth"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="刷新余额" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_token"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_item_default"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="TOKEN余额：" />
+
+            <TextView
+                android:id="@+id/tv_balance_token"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="--" />
+
+            <Button
+                android:id="@+id/btn_refresh_balance_token"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="刷新TOKEN余额" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_deploy"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="刷新TOKEN余额" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_token_my"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="My TOKEN余额：" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_balance_token_my"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="&#45;&#45;" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_refresh_balance_token_my"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:text="刷新私链余额" />-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

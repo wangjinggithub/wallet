@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaiBeiWallet</string>
+    <string name="title_activity_deploy_contract">DeployContract</string>
+</resources>

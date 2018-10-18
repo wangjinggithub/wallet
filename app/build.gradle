@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        applicationId "com.trywang.baibeiwallet"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.android.support:multidex:1.0.2"
+
+    //web3j以及geth
+    implementation 'org.web3j:core:3.3.1-android'
+//    implementation 'org.ethereum:geth:1.8.11'
+    //bitcoinj
+    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //qrcode 生成二维码
+//    implementation 'com.trywang.qrcodelibrary:qrcodelibrary:1.0.3'
+    //qrcode 扫码相关代码
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    //bip44
+//    implementation 'io.github.novacrypto:BIP44:0.0.3'
+    //bip32
+//    implementation 'io.github.novacrypto:BIP32:0.0.9'
+    // ReactiveX
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+}

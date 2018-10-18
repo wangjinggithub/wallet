@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".solidity.DeployContract"
+    tools:showIn="@layout/activity_deploy_contract">
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_deploy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="部署合约"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_two"
+        app:layout_constraintTop_toBottomOf="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_mint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="铸币"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_three"
+        app:layout_constraintTop_toBottomOf="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
